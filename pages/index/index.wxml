@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+    <image class="user-avatar" src="{{post_image_path}}"></image>
+    <text class="user-name">hello world</text>
+    <view class="moto-container" bindtap="onTap">
+        <text>get start</text>
+    </view>
+</view>
