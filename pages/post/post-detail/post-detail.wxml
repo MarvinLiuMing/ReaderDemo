@@ -1,0 +1,21 @@
+<!--pages/post/post-detail/post-detail.wxml-->
+<view class="container">
+    <image class="detailimg" src="{{articleimage}}"></image>
+    <image class="audio" src="/images/music.png"></image>
+    <view class="auth-container">
+        <image class="post-author" src="/images/avatar.png"></image>
+        <text class="post-date">{{authername}}</text>
+        <text class="post-date">发表于{{articltime}}</text>
+    </view>
+    <text class="post-title">{{title}}</text>
+    <view class="tool">
+        <view class="post-like">
+            <image wx:if="{{collected}}" catchtap="collectiontap"  class="post-like-image" src="{{collectionimg}}"></image>
+            <image wx:else catchtap="collectiontap"  class="post-like-image" src="{{uncollectionimg}}"></image>
+            <image catchtap="sharetap" class="post-like-image" src="/images/share.png"></image>
+        </view>
+        
+    </view>
+    <view class="horizon"></view>
+    <text class="detail">{{articlecontent}}</text>
+</view>

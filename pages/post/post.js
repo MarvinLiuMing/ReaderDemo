@@ -27,5 +27,20 @@ Page({
   },
   onUnload: function () {
     // 页面关闭
+  },
+  todetail : function(event){
+    var id =event.currentTarget.dataset.pageid;
+    wx.navigateTo({
+      url: 'post-detail/post-detail?id='+id,
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
   }
 })
